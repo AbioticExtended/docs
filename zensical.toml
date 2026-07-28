@@ -1,0 +1,222 @@
+[project]
+
+site_name = "Abiotic Extended Docs"
+site_description = "Modding docs for Abiotic Factor."
+site_author = "ABE"
+copyright = "Copyright &copy; 2026 Abiotic Factor Modding Community. Licensed under Creative Commons BY-SA 4.0"
+
+extra_css = ["stylesheets/extra.css"]
+#extra_javascript = ["javascripts/extra.js"]
+
+# The site_url is the canonical URL for your site. When building online
+# documentation you should set this.
+#site_url = "https://www.example.com/"
+
+# Zensical supports both implicit navigation and explicitly defined navigation.
+# If you decide not to define a navigation here then Zensical will simply
+# derive the navigation structure from the directory structure of your
+# "docs_dir". The definition below demonstrates how a navigation structure
+# can be defined using TOML syntax.
+#
+# Read more: https://zensical.org/docs/setup/navigation/
+
+nav = [
+  { "Home" = "index.md" },
+  { "Mod Users" = [
+    "users/installing.md"
+  ]},
+  { "AbioticSchema" = [
+    "schema/intro.md",
+    { "Getting Started" = [
+      "schema/getting_started/setup.md",
+      "schema/getting_started/structure.md",
+      "schema/getting_started/custom_recipe.md",
+      "schema/getting_started/custom_item.md"
+    ]},
+    { "References" = [
+      "schema/reference/index.md",
+      { "Structs" = [
+        "schema/reference/structs/Abiotic_CustomizationStruct.md",
+        "schema/reference/structs/Abiotic_EmailStruct.md",
+        "schema/reference/structs/Abiotic_FPAnimationStruct.md",
+        "schema/reference/structs/Abiotic_InventoryItemStruct.md",
+        "schema/reference/structs/Abiotic_ItemDropTableStruct.md",
+        "schema/reference/structs/Abiotic_NPCStruct.md",
+        "schema/reference/structs/Abiotic_ProjectileStruct.md",
+        "schema/reference/structs/Abiotic_WeaponAnimationData_Struct.md",
+        "schema/reference/structs/AbioticRecipe_Struct.md",
+        "schema/reference/structs/Achievement.md",
+        "schema/reference/structs/AchievementStat.md",
+        "schema/reference/structs/Announcement_Struct.md",
+        "schema/reference/structs/ArmorStandPose_Struct.md",
+        "schema/reference/structs/Assault_Struct.md",
+        "schema/reference/structs/BeaconIcons_Struct.md",
+        "schema/reference/structs/BenchUpgrade.md",
+        "schema/reference/structs/BuffDebuff.md",
+        "schema/reference/structs/CompendiumEntry.md",
+        "schema/reference/structs/ConsoleCommand_Struct.md",
+        "schema/reference/structs/DamageDefinition.md",
+        "schema/reference/structs/DebrisData_Struct.md",
+        "schema/reference/structs/DistillationEntry_Struct.md",
+        "schema/reference/structs/Emote_Struct.md",
+        "schema/reference/structs/ErrorMessage.md",
+        "schema/reference/structs/FishData.md",
+        "schema/reference/structs/FishingZone.md",
+        "schema/reference/structs/GameActivity.md",
+        "schema/reference/structs/GameCommand.md",
+        "schema/reference/structs/GameCredit.md",
+        "schema/reference/structs/GameEntitlement.md",
+        "schema/reference/structs/GameSetting.md",
+        "schema/reference/structs/HolsterState_Struct.md",
+        "schema/reference/structs/ItemAction.md",
+        "schema/reference/structs/ItemCosmetics_Struct.md",
+        "schema/reference/structs/ItemCountArray_Struct.md",
+        "schema/reference/structs/ItemResearchMaterialFrame_Struct.md",
+        "schema/reference/structs/ItemUpgrade.md",
+        "schema/reference/structs/ItemUseFlag_Struct.md",
+        "schema/reference/structs/JournalEntry_Struct.md",
+        "schema/reference/structs/JournalMap_Struct.md",
+        "schema/reference/structs/KeybindSetting.md",
+        "schema/reference/structs/LevelFXData_Struct.md",
+        "schema/reference/structs/LevelMetadata_Struct.md",
+        "schema/reference/structs/MainMenuBackground.md",
+        "schema/reference/structs/NPCConversation.md",
+        "schema/reference/structs/NPCSpawnSubstitute_Struct.md",
+        "schema/reference/structs/NPCTrader.md",
+        "schema/reference/structs/NPCVoice.md",
+        "schema/reference/structs/PaintedDeployable.md",
+        "schema/reference/structs/Pet_Struct.md",
+        "schema/reference/structs/PlantData.md",
+        "schema/reference/structs/QuestData.md",
+        "schema/reference/structs/RecipeSubstitutes_Struct.md",
+        "schema/reference/structs/SandboxOption.md",
+        "schema/reference/structs/SetBonus.md",
+        "schema/reference/structs/SimpleTexture2D_Struct.md",
+        "schema/reference/structs/SingleText_Struct.md",
+        "schema/reference/structs/SkillData.md",
+        "schema/reference/structs/SkillPerk.md",
+        "schema/reference/structs/SkillPerkData_Struct.md",
+        "schema/reference/structs/StatModifier.md",
+        "schema/reference/structs/StoryProgress_Struct.md",
+        "schema/reference/structs/TextureVariant_Struct.md",
+        "schema/reference/structs/TPAnimation_Struct.md",
+        "schema/reference/structs/TraderItems_Struct.md",
+        "schema/reference/structs/Trait_Struct.md",
+        "schema/reference/structs/TutorialHint_Struct.md",
+        "schema/reference/structs/TutorialPanelKeybindTips_Struct.md",
+        "schema/reference/structs/TutorialPanelTips_Struct.md",
+        "schema/reference/structs/TVTips_Struct.md",
+        "schema/reference/structs/UIKeybindAction.md",
+        "schema/reference/structs/UIPopup.md",
+        "schema/reference/structs/UnderwaterFX_Struct.md",
+        "schema/reference/structs/WaypointData_Struct.md",
+        "schema/reference/structs/WeaponCoating_Struct.md",
+        "schema/reference/structs/WeaponMeleeData_Struct.md",
+        "schema/reference/structs/WeatherEvent.md",
+        "schema/reference/structs/WishingShelfStats_Struct.md",
+        "schema/reference/structs/WorldFlag.md",
+        "schema/reference/structs/WorldFlagTrigger.md"
+      ]}
+    ]}
+  ]}
+]
+
+# ----------------------------------------------------------------------------
+# Section for configuring theme options
+# ----------------------------------------------------------------------------
+[project.theme]
+
+favicon = "assets/favicon.ico"
+logo = "assets/ABE.png"
+
+features = [
+    "announce.dismiss",
+
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+
+    # "header.autohide",
+
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    #"navigation.instant.progress",
+    "navigation.path",
+    #"navigation.prune",
+    "navigation.sections",
+    "navigation.tabs",
+    #"navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+]
+
+[project.theme.font]
+text = "DM Sans"
+code = "Jetbrains Mono"
+
+# Read more: https://zensical.org/docs/customization/#extending-the-theme
+#custom_dir = "overrides"
+
+# Read more: https://zensical.org/docs/setup/colors/
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# ----------------------------------------------------------------------------
+# In this section you can configure the Markdown extensions that are used when
+# rendering your documentation. We enable the most useful extensions by default,
+# but you can customize this list to your needs.
+# ----------------------------------------------------------------------------
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.magiclink]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.blocks.caption]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]
