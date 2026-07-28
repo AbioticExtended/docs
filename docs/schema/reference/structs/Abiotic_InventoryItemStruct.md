@@ -248,7 +248,7 @@ Below are some examples of InventoryItem `.json` files.
 
 A custom watch, based on `pocketwatch` in `ItemTable_Pickups`, that applies the **Bio-Fusion Armwraps** buff to the player while equipped.
 
-![bio-fusion pocketwatch](/assets/screenshots/inventoryitem/biofusionwatch.png){width=100%}
+![bio-fusion pocketwatch](/docs/assets/screenshots/inventoryitem/biofusionwatch.png){width=100%}
 
 ```json title="fusion_pocketwatch.json"
 {
@@ -290,7 +290,7 @@ A custom watch, based on `pocketwatch` in `ItemTable_Pickups`, that applies the 
 
 This file modifies the Jinxed Shinplates from the Hex armor set to have increased armor and +1 cold resistance.
 
-![modifying armor](/assets/screenshots/inventoryitem/hexlegs.png){width=100%}
+![modifying armor](/docs/assets/screenshots/inventoryitem/hexlegs.png){width=100%}
 
 ```json title="modified_hex_armor.json"
 {

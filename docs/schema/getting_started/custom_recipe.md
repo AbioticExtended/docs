@@ -8,7 +8,7 @@ Now that your mod has a folder and a `mod.toml` file, we can start adding patche
 
 ### Where do we put our patch?
 
-![Creating a new folder and file for recipes](/assets/screenshots/gettingstarted/newrecipe.png){width=30% align=right}
+![Creating a new folder and file for recipes](/docs/assets/screenshots/gettingstarted/newrecipe.png){width=30% align=right}
 
 AbioticSchema expects patches to be organised into specially-named folders. In other words, all your recipe patches should be in a `Recipes/` folder, all your item patches should be in an `Items/` folder, and so on.
 
@@ -33,7 +33,7 @@ This is the JSON object that'll eventually become our patch. But it's missing so
 
 #### Finding a row to edit
 
-![Finding a row in FModel](/assets/screenshots/gettingstarted/fmodel_bolts.png){width=40% align=right}
+![Finding a row in FModel](/docs/assets/screenshots/gettingstarted/fmodel_bolts.png){width=40% align=right}
 
 First, we need to find the name of the row we want to edit. I've decided I want this patch to rebalance the crafting recipe for **Makeshift Bolts**. 
 
@@ -51,7 +51,7 @@ Let's add this to the thing we just pasted into our `.json` file, inside the quo
 
 #### Adding missing properties
 
-![VS Code Warning](/assets/screenshots/gettingstarted/vscode_error.png){width=40% align=right}
+![VS Code Warning](/docs/assets/screenshots/gettingstarted/vscode_error.png){width=40% align=right}
 
 At this point, if everything is setup correctly, VS Code should now be complaining about your patch and drawing a squiggly yellow line underneath it. 
 
@@ -72,7 +72,7 @@ Let's add the missing properties, and set the `"Table"` to be `DT_Recipes`.
 
 #### Setting the patch mode
 
-![VS Code Patch Mode Warning](/assets/screenshots/gettingstarted/vscode_patchmode.png){width=80%}
+![VS Code Patch Mode Warning](/docs/assets/screenshots/gettingstarted/vscode_patchmode.png){width=80%}
 /// caption
 ///
 
@@ -95,7 +95,7 @@ You can learn more about modes in [the reference guide](../reference/#patch-mode
 
 Finally, we can start deciding what we want our patch to change about the row. 
 
-![VS Code being helpful](/assets/screenshots/gettingstarted/vscode_helpful.png){width=40% align=right}
+![VS Code being helpful](/docs/assets/screenshots/gettingstarted/vscode_helpful.png){width=40% align=right}
 
 When you type your first quote-mark inside `"RowData"`, VS Code will share some hints about the different properties available. You can learn more about these properties on the dedicated page for [Recipes](../reference/structs/AbioticRecipe_Struct.md).
 
@@ -131,7 +131,7 @@ If everything is correct, we should see our recipe patch applied when we start t
 
 When testing AbioticSchema mods, it's recommended to enable UE4SS's GuiConsole (if it isn't already), as the loader will log every step of the process and let you know if anything goes wrong.
 
-![AFS logging](/assets/screenshots/gettingstarted/afs_logging.png){width=40% align=right}
+![AFS logging](/docs/assets/screenshots/gettingstarted/afs_logging.png){width=40% align=right}
 
 ```ini title="UE4SS-settings.ini"
 [Debug]
@@ -143,7 +143,7 @@ GuiConsoleVisible = 1
 
 After loading a save and going to the Crafting Bench, you can see the patch was successful!
 
-![AFS logging](/assets/screenshots/gettingstarted/ingame_recipe.png)
+![AFS logging](/docs/assets/screenshots/gettingstarted/ingame_recipe.png)
 
 !!! success "Well done!"
     You just made your very first datatable edit. The sky is the limit from here. If you ever get stuck, try to find some examples to reference using FModel, on this wiki, or from other peoples mods.

@@ -4,7 +4,7 @@ title: Structuring our mod
 description: Learning about mod structure.
 ---
 
-![Open folder in VS Code](/assets/screenshots/gettingstarted/code.gif){width=40% align=right}
+![Open folder in VS Code](/docs/assets/screenshots/gettingstarted/code.gif){width=40% align=right}
 
 With the setup complete, we can finally start modding.<br> In **VS Code**, with the `AbioticSchema` folder open, right click the `mods` folder and create a **new folder** for our tutorial mod.
 
